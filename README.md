@@ -21,11 +21,17 @@ It predicts whether a transaction is Fraud (1) or Normal (0) based on user behav
 The model takes the following inputs:
 
 - distance_from_home → Distance between home and transaction location
+  
 - distance_from_last_transaction → Distance from previous transaction
+  
 - ratio_to_median_purchase_price → Purchase amount compared to usual spending
+  
 - repeat_retailer → (1 = Yes, 0 = No)
+  
 - used_chip → (1 = Yes, 0 = No)
+  
 - used_pin_number → (1 = Yes, 0 = No)
+  
 - online_order → (1 = Yes, 0 = No)
 
 ---
@@ -42,28 +48,40 @@ The model takes the following inputs:
 ✅ Normal Transaction
 
 distance_from_home = 5
+
 distance_from_last_transaction = 3
+
 ratio_to_median_purchase_price = 1.2
+
 repeat_retailer = 1
+
 used_chip = 1
+
 used_pin_number = 1
+
 online_order = 0
 
-👉 Output: 0 (Safe Transaction)
+👉 Output: Legitimate transaction 
 
 ---
 
 ❌ Fraud Transaction
 
 distance_from_home = 500
+
 distance_from_last_transaction = 300
+
 ratio_to_median_purchase_price = 8
+
 repeat_retailer = 0
+
 used_chip = 0
+
 used_pin_number = 0
+
 online_order = 1
 
-👉 Output: 1 (Fraud Detected)
+👉 Output: Fraud Transaction Detected
 
 ---
 
@@ -74,7 +92,7 @@ online_order = 1
 - NumPy
 - Scikit-learn
 
----
+
 
 ▶️ How to Run
 
