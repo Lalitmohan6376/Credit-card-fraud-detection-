@@ -116,10 +116,3 @@ The goal of this project is to prevent financial fraud by identifying suspicious
 🔹 Add real-time API
 🔹 Deploy as a web application
 
----
-
-👨‍💻 Author
-
-Your Name
-
----
